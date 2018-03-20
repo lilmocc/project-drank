@@ -1,1 +1,13 @@
-/* testing CSS */
+#bg-video {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+}
+.jumbovidtext {
+    z-index: 1;
+    position: absolute;
+    font-size: 20px;
+    font-family: monospace;
+    color: white;
+}
