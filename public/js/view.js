@@ -1,6 +1,8 @@
 // front-end javascript
 
 $(document).ready(function() {
+   
+  $('.js-example-basic-multiple').select2();
 
   // array to store ingredients added by user
   var ingredients = [];
