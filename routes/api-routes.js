@@ -50,10 +50,12 @@ FROM \
         drinks AS d \
     INNER JOIN drinks_ingredients AS di ON d.drink_id = di.drink_id \
     INNER JOIN ingredients AS i ON di.ingredient_id = i.ingredient_id \
-        AND i.ingredient_name IN ( ? ) \
+        AND i.ingredient_name IN ( :ingredients ) \
     GROUP BY d.drink_id , d.drink_name) AS countOfMatchedIngredients) AS comi ON comi.drink_id = ml.drink_id \
     WHERE ml.rowcount = comi.rowcount)";
-  db.sequelize.query(possibleDrinks, {replacements: ingredients})
+
+    console.dir(ingredients);
+  db.sequelize.query(possibleDrinks, {replacements: {ingredients: ingredients}})
     .then(function(dbResults) {
       // console.log(typeof dbResults);
 
@@ -66,8 +68,8 @@ FROM \
 
         return last;
       }, {})
-      console.log(drinks);
-      debugger;
+      // console.log(drinks);
+      // debugger;
       return drinks;
 
       // var drinksArray = [];
@@ -99,7 +101,7 @@ FROM \
       debugger;
       console.log('inside last then');
       console.log(drinks);
-      res.send(drinks);
+      res.json(drinks);
     }).catch(function(err){
       console.log('Error: ' + err);
     }) // replace ingredients with userInput
