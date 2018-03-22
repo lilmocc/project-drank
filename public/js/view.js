@@ -153,7 +153,7 @@ $(document).ready(function() {
       var currentURL = window.location.origin;
 
       $.post(currentURL + "/api/ingredients", { ingredients: ingredients }, function(data){
-
+          debugger;
       })
 
     });
