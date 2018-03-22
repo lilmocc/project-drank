@@ -1,9 +1,11 @@
+/* ///////////////////////index.html/////////////////////////// */
+
 body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
     color: #f5f6f7;
 }
-}
+
 p {font-size: 16px;}
 .margin {
   margin-bottom: 45px;
@@ -21,9 +23,11 @@ p {font-size: 16px;}
     background-color: #474e5d; /* Dark Blue */
     color: #ffffff;
 }
-.bg-2 h3, p {
+
+/* .bg-2 h3,
+.bg-2 p {
   font-family: cursive;
-}
+} */
 .bg-3 {
     background-color: #ffffff; /* White */
     color: #555555;
@@ -49,129 +53,63 @@ p {font-size: 16px;}
     color: #1abc9c !important;
 }
 
-/* nav, header, footer{
-  display: block;
-}
+/* ///////////////////////////Drank.html/////////////////////////// */
 
-body {
-  line-height: 1;
+/* .container {  */
+  /* padding: 0;
   margin: 0;
+  position: relative; */
+/* } */
+
+video#bg-video {
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+
 }
 
-nav {
-  width: 100%;
-  margin: 0;
+.jumbotron.jumbotron-transparent {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20%;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-nav ul {
-  background-color: #eee;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
+#gradientButton {
+  color: white;
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(0,200,0,1));
 }
-
-ul.topnav li {
-  list-style: none;
-  float: right;
+.jumbotron {
 }
-
-ul.topnav li a {
-  display: block;
-  text-decoration: none;
-  font-size: 16px;
+/* div.jumbovidtext{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
   text-align: center;
   padding: 14px;
-  text-transform: uppercase;
-  color:
+
+} */
+
+.jumbotron.jumbotron-transparent h1 {
+  padding-bottom: 15px;
+  font-weight: bold;
+  font-size: 80px;
 }
 
-ul.topnav li a:hover {
-  background-color: 0080ff;
-  color: white;
+.jumbotron.jumbotron-transparent p {
+  padding-bottom: 7px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-h1.large {
-  color: white;
-  font-size: 35px;
-  margin: 0;
-  line-height: 70px;
-}
-
-h2.medium {
-  color: white;
-  font-size: 22px;
-  margin: 0;
-  line-height: 50px;
-}
-
-.col-12{
-  background-color: #47618c;
-}
-/* //////////////////////////////////////// */
-
-/* .container {
-  width: 100%
-  margin: auto;
-  padding-top: 4%;
-  padding-bottom: 4%;
-}
-
-.row {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.row::after {
-  display: table;
-  clear: both;
-  content: "";
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-/* ////////////////////////////////// */
-
-/* #bg-video {
-    top: 0px;
-    left: 0px;
-    position: cover;
-    width: 100%;
-}
-
-.jumbovidtext {
-    z-index: 1;
-    position: center;
-    font-size: 20px;
-    font-family: monospace;
-    color: white;
-}
-
-.jumbotron {
-    background-position: center;
-    background-size: cover;
-    background-image:
-    width: 100%
-    margin: auto;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    min-height: 100%;
-  }
-
-.ovf-hidden{
-  height: auto;
-  width: auto; */
-/* } */
-/* //////////////////////////////////////// */ */
+/* //////////////////////////////////////////////////////////// */
