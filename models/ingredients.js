@@ -6,6 +6,8 @@ module.exports = function(sequelize, DataTypes) {
       },
     ingredient_name: DataTypes.STRING,
     ingredient_type: DataTypes.STRING
+  }, {
+    timestamps: false
   });
 
   return allIngredients;
