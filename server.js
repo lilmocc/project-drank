@@ -21,7 +21,7 @@ app.use(express.static("public"));
 
 // ROUTES (CONTROLLERS)
 require("./routes/api-routes.js")(app);
-// require("./routes/html-routes.js")(app);
+require("./routes/html-routes.js")(app);
 
 // sync models and start Express
 // =============================================================

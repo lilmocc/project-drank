@@ -22,8 +22,8 @@ debugger
   });
 
 app.post("/api/ingredients", function(req, res) {
-  // var ingredients = req.body.ingredients;
-  var ingredients = ['club soda' , 'orange juice', 'vodka', 'gin', 'grapefruit juice']
+  var ingredients = req.body.ingredients;
+  // var ingredients = ['club soda' , 'orange juice', 'vodka', 'gin', 'grapefruit juice']
   // console.log(userInput);
   console.log("ingredients: " + ingredients);
 
@@ -55,7 +55,6 @@ FROM \
     WHERE ml.rowcount = comi.rowcount)";
   db.sequelize.query(possibleDrinks, {replacements: ingredients})
     .then(function(dbResults) {
-      debugger
       // console.log(typeof dbResults);
 
       var drinks = dbResults[0].reduce(function(last, current) {
@@ -67,6 +66,9 @@ FROM \
 
         return last;
       }, {})
+      console.log(drinks);
+      debugger;
+      return drinks;
 
       // var drinksArray = [];
       //
@@ -92,6 +94,14 @@ FROM \
       //   screwdriver: [ 'vodka', 'orange juice' ] }
 
 
+    })
+    .then(function(drinks){
+      debugger;
+      console.log('inside last then');
+      console.log(drinks);
+      res.send(drinks);
+    }).catch(function(err){
+      console.log('Error: ' + err);
     }) // replace ingredients with userInput
 
 });
