@@ -68,7 +68,7 @@ FROM \
 
         return last;
       }, {})
-      // console.log(drinks);
+    
       // debugger;
       return drinks;
 
