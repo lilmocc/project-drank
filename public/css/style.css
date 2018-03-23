@@ -14,7 +14,7 @@ p {font-size: 16px;}
     background-color: #47618c;
     /* color: #ffffff; */
     background-size: cover;
-    background-image: url("assets/Bar_Pic1.jpeg");
+    /* background-image: url("assets/Bar_Pic1.jpeg"); */
 }
 .bg-1 h3 {
   font-family: cursive;

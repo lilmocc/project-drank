@@ -21,10 +21,10 @@ debugger
       });
   });
 
+// SQL QUERY - takes ingredients input from front end and searches for drinks in database
 app.post("/api/ingredients", function(req, res) {
   var ingredients = req.body.ingredients;
-  // var ingredients = ['club soda' , 'orange juice', 'vodka', 'gin', 'grapefruit juice']
-  // console.log(userInput);
+  // var ingredients = ['club soda' , 'orange juice', 'vodka', 'gin', 'grapefruit juice'] // for testing
   console.log("ingredients: " + ingredients);
 
   var possibleDrinks = "SELECT d.drink_id, d.drink_name, i.ingredient_name FROM drinks AS d \
@@ -68,33 +68,7 @@ FROM \
 
         return last;
       }, {})
-    
-      // debugger;
       return drinks;
-
-      // var drinksArray = [];
-      //
-      // for (i = 0; i < dbResults[0].length; i++){
-      //   drinksArray.push(dbResults[0][i].drink_name);
-      //
-      // }
-      // console.log(drinksArray);
-
-      // Object.keys(drinks).forEach(function(key) { console.log(drinks[key]) })
-      // [ 'vodka', 'grapefruit juice' ]
-      // [ 'vodka', 'orange juice', 'grapefruit juice' ]
-      // [ 'vodka', 'orange juice' ]
-      //
-      // drinks.californian
-      // [ 'vodka',
-      //   'orange juice',
-      //   'grapefruit juice' ]
-      //
-      // console.dir(drinks)
-      // { 'grey hound': [ 'vodka', 'grapefruit juice' ],
-      //   californian: [ 'vodka', 'orange juice', 'grapefruit juice' ],
-      //   screwdriver: [ 'vodka', 'orange juice' ] }
-
 
     })
     .then(function(drinks){
@@ -104,16 +78,8 @@ FROM \
       res.json(drinks);
     }).catch(function(err){
       console.log('Error: ' + err);
-    }) // replace ingredients with userInput
-
+    })
 });
-
-
-
-// var allDrinks = "SELECT * FROM drinks;"
-
-
-
 
 
 };
