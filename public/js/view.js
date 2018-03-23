@@ -3,95 +3,92 @@
 $(document).ready(function() {
 
   var drinksArr = [
-    'lemon vodka',
-    'gin',
-    'brandy',
-    'whiskey',
-    'american whiskey',
-    'canadian whiskey',
-    'irish whiskey',
-    'bourbon',
-    'rum',
-    'light rum',
-    'dark rum',
-    'tequila',
-    'scotch',
-    'bourbon',
-    'cognac',
-    'beer',
-    'bacardi 151',
-    'myers rum',
-    'dry vermouth',
-    'sweet vermouth',
-    'champagne',
-    'amaretto',
-    'baileys',
-    'b&b',
-    'benedictine',
-    'blue curacao',
-    'chambord',
-    'cointreau',
-    'drambuie',
-    'franelico',
-    'galliano',
-    'godiva',
-    'goldschlager',
-    'grand marnier',
-    'gran toores',
-    'jagermeister',
-    'kahlua',
-    'midori',
-    'sambuca',
-    'sloe gin',
-    'southern comfort',
-    'tia maria',
-    'creme de almond',
-    'creme de cassis',
-    'triple sec',
-    'ouzo',
-    'creme de cacao',
-    'creme de menthe',
-    'creme de almond',
-    'peach schnapps',
-    'grapefruit juice',
-    'grenadine',
-    'lime juice',
-    'pina colada mix',
-    'pineapple juice',
-    'tonic water',
-    'club soda',
     '7up',
-    'sweet & sour',
-    'tomato juice',
-    'tonic water',
-    'orange juice',
-    'ginger ale',
-    'diet coke',
-    'coke',
-    'cranberry juice',
-    'water',
-    'cherries',
-    'olives',
-    'cinnamon sticks',
-    'lemon twist',
-    'onion',
-    'lime',
-    'oranges',
-    'nutbeg',
-    'salt',
-    'pepper',
-    'sugar',
-    'nutmeg',
-    'celery',
+    'amaretto',
+    'american whiskey',
+    'b&b',
+    'bacardi 151',
+    'baileys',
+    'beer',
+    'benedictine',
     'bitters',
-    'cream',
-    'worcestershire',
-    'tabasco',
-    'olive juice',
-    'whipped cream',
+    'blue curacao',
+    'bourbon',
+    'bourbon',
+    'brandy',
+    'canadian whiskey',
+    'celery',
+    'chambord',
+    'champagne',
+    'cherries',
+    'cinnamon sticks',
+    'club soda',
     'coconut cream',
     'coffee',
-    'vodka'
+    'cognac',
+    'cointreau',
+    'coke',
+    'cranberry juice',
+    'cream',
+    'creme de almond',
+    'creme de cacao',
+    'creme de cassis',
+    'creme de menthe',
+    'dark rum',
+    'diet coke',
+    'drambuie',
+    'dry vermouth',
+    'franelico',
+    'galliano',
+    'gin',
+    'ginger ale',
+    'godiva',
+    'goldschlager',
+    'gran torres',
+    'grand marnier',
+    'grapefruit juice',
+    'grenadine',
+    'irish whiskey',
+    'jagermeister',
+    'kahlua',
+    'lemon twist',
+    'lemon vodka',
+    'light rum',
+    'lime juice',
+    'lime',
+    'midori',
+    'myers rum',
+    'nutmeg',
+    'olive juice',
+    'olives',
+    'onion',
+    'orange juice',
+    'oranges',
+    'ouzo',
+    'peach schnapps',
+    'pepper',
+    'pina colada mix',
+    'pineapple juice',
+    'rum',
+    'salt',
+    'sambuca',
+    'scotch',
+    'sloe gin',
+    'southern comfort',
+    'sugar',
+    'sweet & sour',
+    'sweet vermouth',
+    'tabasco',
+    'tequila',
+    'tia maria',
+    'tomato juice',
+    'tonic water',
+    'triple sec',
+    'vodka',
+    'water',
+    'whipped cream',
+    'whiskey',
+    'worcestershire'
   ];
 
 // var arrayLength = drinksArr.length;
@@ -125,6 +122,7 @@ $(document).ready(function() {
         ingredients.push(newIngredient);
         var ingredientButton = $("<button type='button' class='btn btn-primary'>" + newIngredient + "</button>")
         $("#ingredient-buttons").append(ingredientButton);
+
         console.log('ingredient added...');
         console.log(ingredients);
       }
@@ -153,10 +151,25 @@ $(document).ready(function() {
       var currentURL = window.location.origin;
 
       $.post(currentURL + "/api/ingredients", { ingredients: ingredients }, function(data){
-          debugger;
+          // debugger;
+
+          var drinkNameArray = Object.keys(data);
+          var drinkIngredientsArray = Object.values(data);
+
+          // $(drinkNameArray).push(Object.keys(data));
+          console.log("DRINK NAMES: " + drinkNameArray);
+
+          for (i = 0; i < drinkNameArray.length; i++) {
+            console.log("drink #" + (i+1) + " " + drinkNameArray[i]);
+            console.log("ingredients #" + (i+1) + " " + drinkIngredientsArray[i]);
+          }
+
+
+
       })
 
     });
+
     console.log('called');
 
 
