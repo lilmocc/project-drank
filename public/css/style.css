@@ -53,6 +53,31 @@ p {font-size: 16px;}
     color: #1abc9c !important;
 }
 
+#firstContainer {
+
+}
+
+#secondContainer {
+
+  /* background-repeat: round; */
+  background-image: url("../assets/2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
+  /* background-size: cover; */
+}
+
+#footerMain {
+  /* background-image: url("../assets/Bottles.jpg"); */
+
+
+
+}
+
+#submitIngBtn {
+
+}
+
 /* ///////////////////////////Drank.html/////////////////////////// */
 
 /* .container {  */
