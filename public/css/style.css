@@ -70,6 +70,24 @@ color: #69902c;
   height: 380px;
 }
 
+
+
+#submit-ingredients {
+  color: black;
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(0,200,0,1));
+
+}
+
+
+
+.lead1 {
+  margin-bottom: 0;
+}
+
+
+
+
+
 #secondContainer {
 
   /* background-repeat: round; */
@@ -89,9 +107,6 @@ color: #69902c;
 }
 
 
-#submitIngBtn {
-
-}
 
 /* ///////////////////////////Drank.html/////////////////////////// */
 
@@ -126,6 +141,8 @@ video#bg-video {
 #gradientButton {
   color: white;
   background: linear-gradient(to right, rgba(255,0,0,0), rgba(0,200,0,1));
+  /* font: 20px Montserrat, sans-serif;
+  font-weight: bolder; */
 }
 .jumbotron {
 }
