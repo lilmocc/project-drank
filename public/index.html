@@ -24,11 +24,43 @@
 <div class="container">
     <div class="jumbotron jumbotron-transparent">
       <h1 class="display-4">drank.</h1>
-      <p class="lead">Tell us your ingredients, we'll give you dranks!</p>
+      <p class="lead">give us your ingredients, we'll give you dranks!</p>
       <hr class="my-4">
       <p class="lead">
-        <a id="gradientButton" class="btn purple-gradient btn-lg" href="drank.html" role="button">get mixing.</a>
+        <a id="gradientButton" class="btn purple-gradient btn-lg" data-toggle="modal" data-target="#ageModal" role="button">get mixing.</a>
       </p>
+    </div>
+</div>
+
+
+        <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ageModal">
+    Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">age verification.</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                you must be 21 or over to drank!
+            </div>
+            <div class="modal-footer">
+                <p class="lead">
+                <a id="gradientButtonDismiss" class="btn purple-gradient btn-lg" data-dismiss="modal" role="button">too young.</a>
+                </p>
+                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">too young.</button> -->
+                <p class="lead">
+                  <a id="gradientButton" class="btn purple-gradient btn-lg" href="drank.html" role="button">old enough.</a>
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 

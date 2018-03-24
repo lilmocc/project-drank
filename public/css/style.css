@@ -85,7 +85,14 @@ video#bg-video {
 
 #gradientButton {
   color: white;
-  background: linear-gradient(to right, rgba(255,0,0,0), rgba(0,200,0,1));
+  background: #70db70;
+}
+#gradientButtonDismiss {
+  color: white;
+  background: #ff4d4d;
+}
+#ageModal {
+
 }
 .jumbotron {
 }
@@ -107,7 +114,7 @@ video#bg-video {
 }
 
 .jumbotron.jumbotron-transparent p {
-  padding-bottom: 7px;
+  padding-bottom: 3px;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
 }
