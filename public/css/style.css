@@ -4,6 +4,7 @@ body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
     color: #f5f6f7;
+
 }
 
 p {font-size: 16px;}
@@ -185,6 +186,8 @@ video#bg-video {
 
 #your-dranks {
     background-color: black;
+    padding-left: 10%;
+    padding-left: 10%; 
 
 }
 
@@ -198,6 +201,7 @@ video#bg-video {
   display: inline-block;
   white-space: nowrap;
   word-wrap: break-word;
+
 }
 
 .drankname {
