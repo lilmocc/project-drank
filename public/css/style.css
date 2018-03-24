@@ -8,7 +8,7 @@ body {
 
 p {font-size: 16px;}
 .margin {
-  margin-bottom: 45px;
+  /* margin-bottom: 45px; */
 }
 .bg-1 {
     background-color: #47618c;
@@ -53,26 +53,41 @@ p {font-size: 16px;}
     color: #1abc9c !important;
 }
 
-#firstContainer {
+#drankTitle {
+font-weight: bolder;
+font-size: 90px;
+color: #69902c;
 
+}
+
+#firstContainer {
+  background-image: url("../assets/mojito1.jpg");
+  /* background-position: left; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
+  font: 20px Montserrat, sans-serif;
+  height: 380px;
 }
 
 #secondContainer {
 
   /* background-repeat: round; */
-  background-image: url("../assets/2.jpg");
+  background-image: url("../assets/1.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-color: black;
+  background-position: right;
+  height: 400px;
+  font: 20px Montserrat, sans-serif;
   /* background-size: cover; */
 }
 
-#footerMain {
-  /* background-image: url("../assets/Bottles.jpg"); */
-
-
-
+#bg-video2 {
+  float: right;
+  /* margin-bottom: 60px; */
 }
+
 
 #submitIngBtn {
 
