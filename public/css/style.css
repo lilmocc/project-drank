@@ -153,3 +153,24 @@ video#bg-video {
 }
 
 /* //////////////////////////////////////////////////////////// */
+
+#your-dranks {
+    background-color: black;
+    margin-top: 10px;
+}
+
+.drankbox {
+  background-color: white;
+  border-color: #69902C;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.drankname {
+  text-align: center;
+}
