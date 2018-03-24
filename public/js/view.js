@@ -156,7 +156,10 @@ console.log(ingredients);
         var drinkIngredientsArray = Object.values(data); // drink ingredients from query results
 
         for (i = 0; i < drinkNameArray.length; i++) {
-            var drank = $("<div class='drankbox'><h1>" + drinkNameArray[i] + "</h1><br><h3>" + drinkIngredientsArray[i] + "</h3></div>")
+
+            var drank = $("<div class='drankbox'><h1 class='drankname'>" + drinkNameArray[i] + "</h1><br><h3>" + drinkIngredientsArray[i] + "</h3></div>")
+
+
             $("#your-dranks").append(drank);
 
             console.log("drink #" + (i+1) + " " + drinkNameArray[i]);
