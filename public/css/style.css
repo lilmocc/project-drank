@@ -8,13 +8,13 @@ body {
 
 p {font-size: 16px;}
 .margin {
-  margin-bottom: 45px;
+  /* margin-bottom: 45px; */
 }
 .bg-1 {
     background-color: #47618c;
     /* color: #ffffff; */
     background-size: cover;
-    background-image: url("assets/Bar_Pic1.jpeg");
+    /* background-image: url("assets/Bar_Pic1.jpeg"); */
 }
 .bg-1 h3 {
   font-family: cursive;
@@ -53,6 +53,61 @@ p {font-size: 16px;}
     color: #1abc9c !important;
 }
 
+#drankTitle {
+font-weight: bolder;
+font-size: 90px;
+color: #69902c;
+
+}
+
+#firstContainer {
+  background-image: url("../assets/mojito1.jpg");
+  /* background-position: left; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
+  font: 20px Montserrat, sans-serif;
+  height: 380px;
+}
+
+
+
+#submit-ingredients {
+  color: black;
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(0,200,0,1));
+
+}
+
+
+
+.lead1 {
+  margin-bottom: 0;
+}
+
+
+
+
+
+#secondContainer {
+
+  /* background-repeat: round; */
+  background-image: url("../assets/1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
+  background-position: right;
+  height: 400px;
+  font: 20px Montserrat, sans-serif;
+  /* background-size: cover; */
+}
+
+#bg-video2 {
+  float: right;
+  /* margin-bottom: 60px; */
+}
+
+
+
 /* ///////////////////////////Drank.html/////////////////////////// */
 
 /* .container {  */
@@ -85,13 +140,20 @@ video#bg-video {
 
 #gradientButton {
   color: white;
+
   background: #70db70;
 }
+
 #gradientButtonDismiss {
   color: white;
   background: #ff4d4d;
 }
+
 #ageModal {
+
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(0,200,0,1));
+  /* font: 20px Montserrat, sans-serif;
+  font-weight: bolder; */
 
 }
 .jumbotron {
@@ -120,3 +182,24 @@ video#bg-video {
 }
 
 /* //////////////////////////////////////////////////////////// */
+
+#your-dranks {
+    background-color: black;
+    margin-top: 10px;
+}
+
+.drankbox {
+  background-color: white;
+  border-color: #69902C;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.drankname {
+  text-align: center;
+}
