@@ -141,7 +141,6 @@ video#bg-video {
 
 #gradientButton {
   color: white;
-
   background: #70db70;
 }
 
@@ -152,7 +151,7 @@ video#bg-video {
 
 #ageModal {
 
-  background: linear-gradient(to right, rgba(255,0,0,0), rgba(0,200,0,1));
+  /* background: linear-gradient(to right, rgba(255,0,0,0), rgba(0,200,0,1)); */
   /* font: 20px Montserrat, sans-serif;
   font-weight: bolder; */
 
@@ -187,7 +186,7 @@ video#bg-video {
 #your-dranks {
     background-color: black;
     padding-left: 10%;
-    padding-left: 10%; 
+    padding-left: 10%;
 
 }
 
